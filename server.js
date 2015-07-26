@@ -4,7 +4,7 @@
 // A simple chat server using Socket.IO, Express, and Async.
 //
 
-//https://words.bighugelabs.com/api.php
+//https://words.bighugelabs.com/api.phpss
 
 var http = require('http');
 var path = require('path');
