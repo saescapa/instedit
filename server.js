@@ -5,6 +5,7 @@
 //
 var http = require('http');
 var path = require('path');
+var test = require('./external.js')
 
 var async = require('async');
 var socketio = require('socket.io');
@@ -80,5 +81,5 @@ function broadcast(event, data) {
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   var addr = server.address();
-  console.log("Chat server listening at", addr.address + ":" + addr.port);
+  console.log("Instedit running on ", addr.address + ":" + addr.port);
 });
